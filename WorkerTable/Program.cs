@@ -19,11 +19,10 @@ namespace WorkerTable
             table.AddColumn(new TableColumn("Name"));
             table.AddColumn(new TableColumn("Job"));
 
-            int nid = int.Parse(args);
             // Add some rows
-            foreach (int nid in nid)
+            foreach (int nid in args)
                 {
-                    table.AddRow(nid);
+                    table.AddRow("nid");
                     table.AddRow(new TableRow(faker.Random.FullName));
                     table.AddRow(new TableRow(faker.Random.JobTitle));
                 }
