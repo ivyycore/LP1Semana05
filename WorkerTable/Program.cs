@@ -23,7 +23,7 @@ namespace WorkerTable
             // Add some rows
             foreach (int nid in nid)
                 {
-                    table.AddRow(n);
+                    table.AddRow(nid);
                     table.AddRow(new TableRow(faker.Random.FullName));
                     table.AddRow(new TableRow(faker.Random.JobTitle));
                 }
