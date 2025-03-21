@@ -6,7 +6,8 @@ namespace LevelTwo
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            Console.WriteLine(SoGoodClass.SoGoodMethod());
+            if (args.Length == 00)
         }
     }
 }
