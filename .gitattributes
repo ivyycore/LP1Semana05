@@ -1,1 +1,2 @@
 tux.jpg filter=lfs diff=lfs merge=lfs -text
+some_random_image.jpg filter=lfs diff=lfs merge=lfs -text
