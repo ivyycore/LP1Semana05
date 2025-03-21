@@ -1,4 +1,6 @@
 ﻿using System;
+using Spectre.Console;
+using Bogus;
 
 namespace WorkerTable
 {
@@ -6,7 +8,8 @@ namespace WorkerTable
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            Randomizer.Seed = new Random(int.Parse[0]); // Definir seed
+            Faker faker = new Faker("pt_PT"); //Usar o objeto faker para gerar dados
         }
     }
 }
