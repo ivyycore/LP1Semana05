@@ -20,6 +20,11 @@ namespace WorkerTable
             table.AddColumn(new TableColumn("Job"));
 
             // Add some rows
+            foreach (int n in args)
+                {
+                    table.AddRow(n);
+                    table.AddRow(faker.Random.FullName);
+                }
             //table.AddRow("Row1");
             //table.AddRow(new TableRow("Row2").Centered());
 
