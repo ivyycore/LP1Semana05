@@ -1,12 +1,13 @@
 ﻿using System;
 using Spectre.Console;
+using SoGoodLib;
 namespace LevelTwo
 {
     public class Program
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine();
+            Console.WriteLine(SoGoodClass.SoGoodMethod());
             if (args.Length == 00)
             {   
                 //the default image "tux.jpg" is used if not inputs are placed
