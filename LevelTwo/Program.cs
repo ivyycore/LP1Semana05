@@ -6,12 +6,13 @@ namespace LevelTwo
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine(SoGoodClass.SoGoodMethod());
+            Console.WriteLine();
             if (args.Length == 00)
-            {
+            {   
+                //the default image "tux.jpg" is used if not inputs are placed
                 CanvasImage default_image = new CanvasImage("tux.jpg");
-                default_image.MaxWidth(24);
-                AnsiConsole.Write(default_image);
+                default_image.MaxWidth(24); //max size
+                AnsiConsole.Write(default_image); // renders in the console
             }
         }
     }
