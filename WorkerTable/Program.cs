@@ -1,6 +1,7 @@
 ﻿using System;
 using Spectre.Console;
 using Bogus;
+using Spectre.Console.Grid;
 
 namespace WorkerTable
 {
@@ -23,7 +24,8 @@ namespace WorkerTable
             foreach (int n in args)
                 {
                     table.AddRow(n);
-                    table.AddRow(faker.Random.FullName);
+                    table.AddRow(new TableRow (faker.Random.FullName));
+                    table.AddRow(new TableRow (faker.Random.JobTitle));
                 }
             //table.AddRow("Row1");
             //table.AddRow(new TableRow("Row2").Centered());
